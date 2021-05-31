@@ -16,7 +16,7 @@ const UserCard = ({user, deleteUser, isLoggedIn}) => {
                    
                     <h3>User: {user.id}</h3>
                     <h1>{user.name}</h1>
-                    <img src={user.avatar} />
+                    <img src={user.avatar} alt={`avatar${user.id}`}/>
                     {isLoggedIn ? 
                     <><p>{user.biography}</p>                    
                     <Button text="Delete User" action={handleOnDelete} /></>
