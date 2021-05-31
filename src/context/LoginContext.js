@@ -10,6 +10,7 @@ class LogInContextProvider extends Component {
         this.setState(({ isLoggedIn }) => ({
             isLoggedIn: isLoggedIn ? false : true,
         }));
+        if(this.state.isLoggedIn) alert('Please Log In Again to Show Info');
     };
 
     render() {
